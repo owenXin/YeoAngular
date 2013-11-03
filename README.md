@@ -1,13 +1,18 @@
 YeoAngular
 ==========
-
+<h3>
 AngularJS test/demo project managed by Yeoman
+<h3>
 
-Install Node.js and then:
+<p>Install Node.js and then:</p>
 
-$ git clone git://github.com/owenXin/YeoAngular.git
-$ cd YeoAngular
-$ sudo npm -g install grunt-cli karma bower
-$ npm install
-$ bower install
-$ grunt server
+<div class="highlight highlight-sh">
+<pre>
+<span class="nv">$ </span>git clone git://github.com/owenXin/YeoAngular
+<span class="nv">$ </span><span class="nb">cd </span>YeoAngular
+<span class="nv">$ </span>sudo npm -g install grunt-cli karma bower
+<span class="nv">$ </span>npm install
+<span class="nv">$ </span>bower install
+<span class="nv">$ </span>grunt server
+</pre>
+</div>
