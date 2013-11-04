@@ -1,13 +1,18 @@
-'use strict';
 
-angular.module('testYeoApp', ['ui.bootstrap'])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+  'use strict';
+
+
+// Declare app level module which depends on filters, and services
+angular.module('testYeoApp', [
+  'ngRoute',
+  'testYeoApp.filters',
+  'testYeoApp.services',
+  'testYeoApp.directives',
+  'testYeoApp.controllers',
+  'ui.bootstrap',
+]).
+config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/view1', {templateUrl: 'views/partial1.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/view2', {templateUrl: 'views/partial2.html', controller: 'MyCtrl2'});
+  $routeProvider.otherwise({redirectTo: '/view1'});
+}]);
