@@ -10,6 +10,7 @@ AngularJS test/demo project managed by Yeoman
 <pre>
 <span class="nv">$ </span>git clone git://github.com/owenXin/YeoAngular
 <span class="nv">$ </span><span class="nb">cd </span>YeoAngular
+<span class="nv">$ </span>git checkout 0
 <span class="nv">$ </span>sudo npm -g install grunt-cli karma bower
 <span class="nv">$ </span>npm install
 <span class="nv">$ </span>bower install
